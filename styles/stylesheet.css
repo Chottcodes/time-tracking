@@ -10,7 +10,7 @@ body {
 @font-face {
   font-family: "Rubik";
   src: url("../Fonts/Rubik-VariableFont_wght.ttf");
-  font-weight: normal;
+  font-weight: 100;
 }
 /*fonts*/
 /*user card */
@@ -98,6 +98,9 @@ body {
   position: relative;
   overflow: hidden;
 }
+.time-container h1{
+  color: white;
+}
 .card-logo {
   margin-right: 10%;
   margin-top: -10px;
@@ -110,7 +113,7 @@ body {
   width: 100%;
   height: 199px;
   border-radius: 5%;
-  overflow: hidden;
+  
 }
 .inner-title {
   display: flex;
@@ -130,7 +133,7 @@ body {
   width: 80%;
   margin: auto;
   font-family: "Rubik", "Courier New", Courier, monospace;
-  color: white;
+  color: #BBC0FF;
 }
 .time-container h3 {
   font-size: 15px;
@@ -220,15 +223,16 @@ body {
   .jeremy-card {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .jeremy-pic {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     margin-top: 0;
     justify-content: center;
   }
   .profile-name-text {
-    margin-left: 0;
+    margin: 0;
   }
   .profile-name-text h3 {
     font-size: 35px;
@@ -244,13 +248,17 @@ body {
     height: 100px;
   }
   .timeframes-container h3 {
-    font-size: 40px;
+    font-size: 45px;
   }
   .inner-title h3 {
     font-size: 35px;
   }
   .time-container h3 {
-    font-size: 20px;
+    font-size: 30px;
+  }
+  .bi-three-dots{
+    height: 35px;
+    width: 30px;
   }
   .work-card-Container {
     grid-row: 2;
@@ -283,18 +291,76 @@ body {
     width: 100%;
   }
 }
-@media (max-width: 901px) {
-  .pic-frame {
-    width: 60%;
-    height: 60%;
-  }
-}
 @media (max-width: 801px) {
+  body{
+    margin: 0;
+  }
   .card-catainer {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-  .profile-name-text{
-    margin-bottom: 10%;
+  .jeremy-pic{
+    width:75%;
+    height: 60%;
+  }
+  .work-card-Container{
+    grid-column: 1/5;
+  }
+  .play-card-container{
+    grid-column: 1/5;
+    grid-row: 3;
+  }
+  .study-card-container {
+    grid-column: 1/5;
+    grid-row: 4;
+  }
+  .Excercise-card-container{
+    grid-column: 1/5;
+    grid-row: 5;
+  }
+  .social-card-container{
+    grid-column: 1/5;
+    grid-row: 6;
+  }
+  .self-care-container{
+    grid-column: 1/5;
+    grid-row: 7;
+  }
+  .profile-name-text h3 {
+    font-size: 35px;
+  }
+  .profile-name-text h1 {
+    font-size: 45px;
+  }
+  .timeframes-container h3 {
+    font-size: 40px;
+  }
+  .inner-title h3 {
+    font-size: 45px;
+  }
+  .time-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .time-container h3 {
+    font-size: 30px;
+  }
+}
+@media(max-width:628px){
+  .timeframes-container h3 {
+    font-size: 30px;
+  }
+  .timeframes-container{
+    align-items: center;
+  }
+  .jeremy-card{
+    height: 65%;
+  }
+  .jeremy-pic{
+    width:65%;
+    height: 65%;
+  }
+  .report-container{
+    height: 400px;
   }
   .profile-name-text h3 {
     font-size: 25px;
@@ -302,19 +368,54 @@ body {
   .profile-name-text h1 {
     font-size: 35px;
   }
-  .timeframes-container h3 {
-    font-size: 40px;
+}
+@media(max-width:517px){
+  .jeremy-pic{
+    width:45%;
+    height: 35%;
   }
-  .inner-title h3 {
-    font-size: 35px;
-  }
-  .time-container h3 {
+  .inner-title h3{
     font-size: 20px;
   }
+  .profile-name-text h3 {
+    font-size: 25px;
+  }
+  .profile-name-text h1 {
+    font-size: 30px;
+  }
+  .report-container{
+    height: 300px;
+  }
+  .time-container h3{
+    font-size: 25px;
+  }
+  .time-container{
+    padding-top: 30px;
+  }
+  .time-container h1{
+    font-size: 35px;
+  }
+  .timeframes-container h3 {
+    font-size: 25px;
+  }
 }
-@media (max-width: 789px) {
-  .pic-frame {
-    width: 60%;
-    height: 60%;
+@media(max-width:456px){
+  .time-container h3{
+    font-size: 20px;
+  }
+  .time-container h1{
+    font-size: 25px;
+  }
+}
+@media(max-width:376px){
+  .profile-name-text h3 {
+    font-size: 20px;
+  }
+  .profile-name-text h1 {
+    font-size: 25px;
+  }
+  .jeremy-pic{
+    width:60%;
+    height: 45%;
   }
 }
