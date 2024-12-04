@@ -6,7 +6,23 @@ body {
   justify-content: center;
 }
 #daily{
-  
+  cursor: pointer;
+
+}
+#daily:hover{
+  color: white;
+}
+#weekly{
+  cursor: pointer;
+}
+#weekly:hover{
+  color: white;
+}
+#monthly{
+  cursor: pointer;
+}
+#monthly:hover{
+  color: white;
 }
 /*fonts*/
 @font-face {
