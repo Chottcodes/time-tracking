@@ -5,7 +5,9 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+#daily{
+  
+}
 /*fonts*/
 @font-face {
   font-family: "Rubik";
