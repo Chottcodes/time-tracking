@@ -23,6 +23,9 @@ body {
 #monthly:hover {
   color: white;
 }
+.bi-three-dots{
+  cursor: pointer;
+}
 /*fonts*/
 @font-face {
   font-family: "Rubik";
@@ -282,9 +285,9 @@ body {
   .time-container h3 {
     font-size: 30px;
   }
-  .bi-three-dots {
-    height: 35px;
-    width: 30px;
+  .dts-adjusted {
+    height: 20px;
+    width: 20px;
   }
   .work-card-Container {
     grid-row: 2;
@@ -440,6 +443,12 @@ body {
   }
 }
 @media (max-width: 376px) {
+  .timeframes-container h3{
+    font-size: 18px;
+  }
+  .inner-title{
+    font-size: 18px;
+  }
   .profile-name-text h3 {
     font-size: 20px;
   }
