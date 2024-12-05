@@ -30,21 +30,39 @@ dailytextBTN.addEventListener('click',function(){
     selfcarehrsTXT.innerText=datajson[5].timeframes.daily.current+"hrs";
     selfcareprevious.innerText="Last Week - "+datajson[5].timeframes.daily.previous+"hrs";
     dailytextBTN.style.color="white";
+    weeklytextBTN.style.color="#7078c9"
+    monthlytextBTN.style.color="#7078c9"
 })
 weeklytextBTN.addEventListener('click',function(){
     workhrsTxt.innerText=datajson[0].timeframes.weekly.current+"hrs";
-    previoushoursworkTXT.innerText="Last Week - "+datajson[0].timeframes.daily.previous+"hrs";
-    playhrsTXT.innerText=datajson[1].timeframes.daily.current+"hrs";
-    playprevious.innerText="Last Week - "+datajson[1].timeframes.daily.previous+"hrs";
-    studyhrsTXT.innerText=datajson[2].timeframes.daily.current+"hrs";
-    studyprevious.innerText="Last Week - "+datajson[1].timeframes.daily.previous+"hrs";
-    exercisehrsTXT.innerText=datajson[3].timeframes.daily.current+"hrs";
-    exerciseprevious.innerText="Last Week - "+datajson[3].timeframes.daily.previous+"hrs";
-    socialhrsTXT.innerText=datajson[4].timeframes.daily.current+"hrs";
-    socialprevious.innerText="Last Week - "+datajson[4].timeframes.daily.previous+"hrs";
-    selfcarehrsTXT.innerText=datajson[5].timeframes.daily.current+"hrs";
-    selfcareprevious.innerText="Last Week - "+datajson[5].timeframes.daily.previous+"hrs";
+    previoushoursworkTXT.innerText="Last Week - "+datajson[0].timeframes.weekly.previous+"hrs";
+    playhrsTXT.innerText=datajson[1].timeframes.weekly.current+"hrs";
+    playprevious.innerText="Last Week - "+datajson[1].timeframes.weekly.previous+"hrs";
+    studyhrsTXT.innerText=datajson[2].timeframes.weekly.current+"hrs";
+    studyprevious.innerText="Last Week - "+datajson[1].timeframes.weekly.previous+"hrs";
+    exercisehrsTXT.innerText=datajson[3].timeframes.weekly.current+"hrs";
+    exerciseprevious.innerText="Last Week - "+datajson[3].timeframes.weekly.previous+"hrs";
+    socialhrsTXT.innerText=datajson[4].timeframes.weekly.current+"hrs";
+    socialprevious.innerText="Last Week - "+datajson[4].timeframes.weekly.previous+"hrs";
+    selfcarehrsTXT.innerText=datajson[5].timeframes.weekly.current+"hrs";
+    selfcareprevious.innerText="Last Week - "+datajson[5].timeframes.weekly.previous+"hrs";
+    dailytextBTN.style.color="#7078c9";
+    weeklytextBTN.style.color="white";
+    monthlytextBTN.style.color="#7078c9";
 })
 monthlytextBTN.addEventListener('click',function(){
-    
+    workhrsTxt.innerText=datajson[0].timeframes.monthly.current+"hrs";
+    previoushoursworkTXT.innerText="Last Week - "+datajson[0].timeframes.monthly.previous+"hrs";
+    playhrsTXT.innerText=datajson[1].timeframes.monthly.current+"hrs";
+    playprevious.innerText="Last Week - "+datajson[1].timeframes.monthly.previous+"hrs";
+    studyhrsTXT.innerText=datajson[2].timeframes.monthly.current+"hrs";
+    studyprevious.innerText="Last Week - "+datajson[1].timeframes.monthly.previous+"hrs";
+    exercisehrsTXT.innerText=datajson[3].timeframes.monthly.current+"hrs";
+    exerciseprevious.innerText="Last Week - "+datajson[3].timeframes.monthly.previous+"hrs";
+    socialhrsTXT.innerText=datajson[4].timeframes.monthly.current+"hrs";
+    socialprevious.innerText="Last Week - "+datajson[4].timeframes.monthly.previous+"hrs";
+    selfcarehrsTXT.innerText=datajson[5].timeframes.monthly.current+"hrs";
+    selfcareprevious.innerText="Last Week - "+datajson[5].timeframes.monthly.previous+"hrs";
+    weeklytextBTN.style.color="#7078c9";
+    monthlytextBTN.style.color="white";
 })
